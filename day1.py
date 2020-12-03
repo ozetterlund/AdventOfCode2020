@@ -17,6 +17,5 @@ def mult3(inList):
                     if name+name2+k == 2020:
                         print(name*name2*k)
                         return 
- 
-shortList=[1721,979,366,299,675,1456] 
+
 mult3(inputList)
