@@ -1,6 +1,6 @@
 
 inputList = []
-with open(r"Inputs\input2.txt") as f:
+with open("input2.txt") as f:
     inputList = [line.strip().split() for line in f]
 
 # Part 1

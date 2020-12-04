@@ -1,6 +1,6 @@
 
 inputList = []
-with open(r"Inputs\input3.txt") as f:
+with open("input3.txt") as f:
     inputList = [line.strip() for line in f]
 
 def slopeChecker(slopeList, columnJump, rowJump):
