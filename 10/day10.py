@@ -24,16 +24,16 @@ print(f"Part one: {p1}")
 # Part 2
 x = 0
 x1 = x2 = x3 = 1
-if inputList[-1] - inputList[-3] <= 3:
+if inputList[2] - inputList[0] <= 3:
     x1 = 2
 
-for i, val in reversed(list(enumerate(inputList[:-3]))):
+for i, val in enumerate(inputList[3:],3):
     x = 0
-    if inputList[i+1] - val <= 3:
+    if  val - inputList[i-1] <= 3:
         x += x1
-    if inputList[i+2] - val <= 3:
+    if val - inputList[i-2] <= 3:
         x += x2
-    if inputList[i+3] - val <= 3:
+    if val - inputList[i-3] <= 3:
         x += x3
     x3 = x2
     x2 = x1
