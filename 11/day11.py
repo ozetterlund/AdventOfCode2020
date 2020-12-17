@@ -40,7 +40,7 @@ def getSeat(row, col, direction, matrix):
     nextCol = col + direction[1]
     adjacentSeat = matrix[nextRow][nextCol]
     
-    if adjacentSeat == '#' or adjacentSeat == 'L' or nextRow in minmaxRow or nextCol in minmaxCol:
+    if adjacentSeat in ['#', 'L'] or nextRow in minmaxRow or nextCol in minmaxCol:
         return adjacentSeat
     else:
         return getSeat(nextRow, nextCol, direction, matrix)
